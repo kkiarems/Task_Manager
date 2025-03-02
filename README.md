@@ -40,11 +40,11 @@ Mysql Database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', <!--Specifies that MySQL is the database backend-->
-        'NAME': 'db_name', <!--Name of the database-->
-        'USER': 'root', <!--Database username-->
-        'PASSWORD': '', <!--Database password-->
-        'HOST': 'localhost', <!--Database host-->
-        'PORT': '3306', <!--Default MySQL port-->
+        'NAME': 'db_name', #Name of the database
+        'USER': 'root', #Database username
+        'PASSWORD': '', #Database password
+        'HOST': 'localhost', #Database host
+        'PORT': '3306', #Default MySQL port
     }
 }
 ```
@@ -61,7 +61,7 @@ python manage.py migrate
 
 ### 5. Set Up (Templates, URLs Routing, Forms, Views,...etc)
 
-Navigate to project directory (if nasa loob na ng project dir you can skip this.)
+after Setting up, Navigate to project directory (if nasa loob na ng project dir you can skip this.)
 ```
 cd project_name
 ```
@@ -84,3 +84,4 @@ Append the App's Url path to access a specific app within your project
 http://127.0.0.1:8000/create/
 ```
 
+Project set up complete! you can now test your project.
