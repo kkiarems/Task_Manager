@@ -61,11 +61,9 @@
                         <td>{% if task.description %}{{ task.description }}{% endif %}</td>
                         <td>{{ task.due_date }}</td>
                         <td>
-                            <span class="badge 
-                                {% if task.status == 'Pending' %} bg-warning 
-                                {% elif task.status == 'Completed' %} bg-success 
-                                {% else %} bg-danger 
-                                {% endif %}">
+                            <span class="badge {% if task.status == 'Pending' %} bg-warning 
+                                                 {% elif task.status == 'Completed' %} bg-success 
+                                                 {% else %} bg-danger {% endif %}">
                                 {{ task.status }}
                             </span>
                         </td>
